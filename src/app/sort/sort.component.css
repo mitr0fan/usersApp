@@ -1,0 +1,16 @@
+span {
+    display: inline-block;
+    width: 117px;
+    background-color: rgb(199, 199, 199);
+    font-size: 8pt;
+    text-align: center;
+    padding: 4px;
+}
+:last-child {
+    width: 116px;
+    border-left: solid 1px;
+}
+span:hover {
+    background-color: rgb(172, 172, 172);
+    cursor: pointer;
+}

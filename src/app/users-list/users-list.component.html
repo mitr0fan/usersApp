@@ -1,0 +1,15 @@
+<app-search (searchEvent)=filter($event)></app-search>
+<app-sort (sortEvent)="makeSort()" (reverseFunc)="makeReverse()"></app-sort>
+<div id="usersList">
+    <div *ngIf="newArr.length==0">
+        <app-user *ngFor="let user of arr" [userData]="user" (click)="selectUser(user)">
+        </app-user>
+    </div>
+    <div *ngIf="newArr.length>0">
+        <app-user *ngFor="let user of newArr" [userData]="user" (click)="selectUser(user)">
+        </app-user>
+    </div>
+</div>
+<div id="background" *ngIf="userInfo!=undefined"></div>
+<app-user-details *ngIf="userInfo!=undefined" [data]="userInfo" (eventClose)="close()">
+</app-user-details>

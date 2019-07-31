@@ -1,0 +1,21 @@
+span {
+    display: block;
+    margin: 10px;
+    text-transform: capitalize;
+}
+#mail {
+    text-transform: none;
+}
+#close {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+}
+img {
+    margin-left: 60px;
+    margin-top: 10px;
+}
+#close:hover {
+    cursor: pointer;
+    color: red;
+}
